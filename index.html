@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Phụ Kiện Điện Thoại</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- MENU TOP -->
+   <div class="top-menu">
+    <!-- Tạo một div trống ở bên trái để cân bằng với giỏ hàng bên phải -->
+    <div class="spacer"></div> 
+
+    <!-- Cụm menu chính cần cho vào giữa -->
+    <div class="menu-links">
+        <a href="#">Khuyến mãi</a>
+        <a href="#">Trả góp</a>
+        <a href="#">Bảng giá</a>
+        <a href="#">Liên hệ</a>
+    </div>
+
+    <!-- Giỏ hàng nằm bên phải -->
+   <div class="cart" onclick="showCart()">
+    🛒 Giỏ hàng: <span id="count">0</span>
+</div>
+</div>
+  <!-- HEADER -->
+<header>
+    <div class="logo">
+        QUANG KIT SHOP
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Bạn tìm gì...">
+        <button>Tìm kiếm</button>
+    </div>
+
+    <!-- Thêm một div trống ở đây để cân bằng layout -->
+    <div class="header-spacer"></div>
+</header>
+    <!-- MENU DANH MỤC -->
+    <div class="category">
+    <!-- Thêm đường dẫn file vào thuộc tính href -->
+    <a href="op-lung.html" class="active">Ốp lưng</a>
+    <a href="tai-nghe.html">Tai nghe</a>
+    <a href="sac-du-phong.html">Sạc dự phòng</a>
+    <a href="cap-sac.html">Cáp sạc</a>
+    <a href="loa-bluetooth.html">Loa bluetooth</a>
+</div>
+
+    <!-- BANNER -->
+    <section class="banner">
+
+    <img id="slide" src="images/banner1.jpg" alt="Banner quảng cáo">
+
+</section>
+
+    <!-- TIÊU ĐỀ SẢN PHẨM -->
+
+<div class="title-product">
+    <h2>SẢN PHẨM NỔI BẬT</h2>
+</div>
+
+<!-- BẮT ĐẦU DANH SÁCH SẢN PHẨM MỚI -->
+<section class="product-container">
+
+<!-- Sản phẩm 1: Tai nghe Bluetooth -->
+<div class="card">
+    <div class="badge badge-discount">Giảm 19%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">Sonic</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/apple-airpods-4-thumb.webp" alt="Tai nghe Bluetooth">
+        </div>
+    </div>
+    
+    <h3 class="product-title">Tai nghe Bluetooth Sonic X1</h3>
+    
+    <div class="product-price">
+        <span class="price-new">1.776.000đ</span>
+        <span class="price-old">2.190.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 50.000đ</div>
+    </div>
+
+    <!-- NÚT BẤM RIÊNG BIỆT -->
+    <button class="add-to-cart-btn" onclick="addCart('Tai nghe Bluetooth Sonic X1', '1.776.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+
+    <!-- Sản phẩm 2: loa -->
+<div class="card">
+    <div class="badge badge-discount">Giảm 19%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">JBL</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/loa1.webp" alt="Loa Bluetooth">
+        </div>
+        <!-- Thông số kỹ thuật (Optional) -->
+        <div class="product-specs">
+            <div class="spec-item">
+                <span class="icon">🔋</span>
+                <p>12h</p>
+            </div>
+            <div class="spec-item">
+                <span class="icon">💧</span>
+                <p>IP67</p>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="product-title">Loa Bluetooth JBL Flip 6</h3>
+    
+    <div class="product-price">
+        <span class="price-new">2.390.000đ</span>
+        <span class="price-old">2.935.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 10.000đ</div>
+    </div>
+
+    <!-- NÚT THÊM VÀO GIỎ HÀNG -->
+    <button class="add-to-cart-btn" onclick="addCart('Loa JBL Flip 6', '2.390.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+
+<!-- Sản phẩm 3: Sạc dự phòng -->
+<div class="card">
+    <div class="badge badge-discount">Giảm 31%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">Anker</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/frame_524_1__4.webp" alt="Sạc dự phòng">
+        </div>
+        <div class="product-specs">
+            <div class="spec-item">
+                <span class="icon">⚡</span>
+                <p>20W</p>
+            </div>
+            <div class="spec-item">
+                <span class="icon">📏</span>
+                <p>10000mAh</p>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="product-title">Sạc dự phòng PowerCore 10000 PD</h3>
+    
+    <div class="product-price">
+        <span class="price-new">3.650.000đ</span>
+        <span class="price-old">5.300.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 30.000đ</div>
+    </div>
+
+    <!-- NÚT THÊM VÀO GIỎ HÀNG -->
+    <button class="add-to-cart-btn" onclick="addCart('Sạc dự phòng PowerCore', '3.650.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+
+<!-- Sản phẩm 4: Cáp sạc Type-C -->
+<div class="card">
+    <div class="badge badge-discount">Giảm 1%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">Apple</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/cap-apple-thunderbolt-4-type-c-pro-1-8m-mw5j3za-a_1_.webp" alt="Cáp sạc Type-C">
+        </div> 
+        <div class="product-specs">
+            <div class="spec-item">
+                <span class="icon">📏</span>
+                <p>1.8m</p>
+            </div>
+            <div class="spec-item">
+                <span class="icon">⚡</span>
+                <p>40Gbps</p>
+            </div>
+        </div> 
+    </div>
+    
+    <h3 class="product-title">Cáp sạc Type-C to Type-C siêu bền</h3>
+    
+    <div class="product-price">
+        <span class="price-new">4.350.000đ</span>
+        <span class="price-old">4.380.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 50.000đ</div>
+    </div>
+
+    <!-- NÚT THÊM VÀO GIỎ HÀNG -->
+    <button class="add-to-cart-btn" onclick="addCart('Cáp Type-C Apple', '4.350.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+</section>
+<!-- KẾT THÚC DANH SÁCH SẢN PHẨM -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tai nghe chính hãng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH MENU GIỎ HÀNG -->
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html" class="active">Tai nghe</a>
+            <a href="sac-du-phong.html">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <!-- Tiêu đề trang -->
+    <div class="title-product">
+        <h2>TAI NGHE BLUETOOTH & CÓ DÂY</h2>
+    </div>
+
+    <!-- Khung chứa sản phẩm -->
+    <section class="product-container">
+        
+        <!-- Sản phẩm 1 -->
+        <div class="card">
+            <div class="badge badge-discount">Giảm 19%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/apple-airpods-4-thumb.webp" alt="AirPods 4">
+                </div>
+                <div class="product-specs">
+                    <div class="spec-item"><span class="icon">🔋</span><p>30 giờ</p></div>
+                    <div class="spec-item"><span class="icon">📶</span><p>BT 5.3</p></div>
+                </div>
+            </div>
+            <h3 class="product-title">Tai nghe Bluetooth Apple AirPods 4</h3>
+            <div class="product-price">
+                <span class="price-new">3.990.000đ</span>
+                <span class="price-old">4.490.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 100.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Apple AirPods 4', '3.990.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="card">
+            <div class="badge badge-discount">Giảm 25%</div>
+            <div class="brand-name">Sony</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sony-wh-1000xm5.webp" alt="Sony WH-1000XM5">
+                </div>
+                <div class="product-specs">
+                    <div class="spec-item"><span class="icon">🎧</span><p>Chống ồn</p></div>
+                    <div class="spec-item"><span class="icon">🔋</span><p>40 giờ</p></div>
+                </div>
+            </div>
+            <h3 class="product-title">Tai nghe Sony WH-1000XM5 Chống ồn</h3>
+            <div class="product-price">
+                <span class="price-new">6.490.000đ</span>
+                <span class="price-old">8.490.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 200.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Sony WH-1000XM5', '6.490.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+
+        <!-- Bạn copy thêm các khối .card tương tự để đủ 8 sản phẩm -->
+
+    </section>
+
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <!-- Sử dụng chung script.js để đồng bộ giỏ hàng qua LocalStorage -->
+    <script src="script.js"></script>
+</body>
+</html>

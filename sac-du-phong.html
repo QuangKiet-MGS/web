@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sạc dự phòng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH MENU GIỎ HÀNG -->
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html">Tai nghe</a>
+            <!-- Mục Sạc dự phòng được thêm class active -->
+            <a href="sac-du-phong.html" class="active">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <!-- Tiêu đề trang -->
+    <div class="title-product">
+        <h2>SẠC DỰ PHÒNG CHÍNH HÃNG</h2>
+    </div>
+
+    <!-- Khung chứa sản phẩm -->
+    <section class="product-container">
+        
+        <!-- Sản phẩm 1 -->
+        <div class="card">
+            <div class="badge badge-discount">Giảm 31%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Anker</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/frame_524_1__4.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Anker PowerCore 10000mAh PD</h3>
+            <div class="product-price">
+                <span class="price-new">3.650.000đ</span>
+                <span class="price-old">5.300.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 30.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Anker PowerCore 10000', '3.650.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+
+        <!-- Sản phẩm 2 (Mẫu) -->
+        <div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+<div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+        <div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+        <div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+        <div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+        <div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+        <div class="card">
+            <div class="badge badge-discount">Giảm 15%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Samsung</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sac-du-phong-samsung.webp" alt="Sạc dự phòng">
+                </div>
+            </div>
+            <h3 class="product-title">Sạc dự phòng Samsung 20,000mAh 25W</h3>
+            <div class="product-price">
+                <span class="price-new">1.250.000đ</span>
+                <span class="price-old">1.500.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 50.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Samsung 20000mAh', '1.250.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+        <!-- Bạn có thể copy thêm các khối .card khác vào đây để đủ 8 sản phẩm -->
+        
+    </section>
+
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <!-- Lưu ý: Chỉ cần 1 dòng script.js là đủ -->
+    <script src="script.js"></script>
+</body>
+</html>

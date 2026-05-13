@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách Ốp lưng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH MENU GIỎ HÀNG -->
+<div class="top-menu">
+    <div class="menu-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="op-lung.html" class="active">Ốp lưng</a>
+        <a href="tai-nghe.html">Tai nghe</a>
+        <a href="sac-du-phong.html">Sạc dự phòng</a>
+        <a href="cap-sac.html">Cáp sạc</a>
+        <a href="loa-bluetooth.html">Loa bluetooth</a>
+    </div>
+    <!-- Ô GIỎ HÀNG ĐỂ BẤM THANH TOÁN -->
+    <div class="cart" onclick="showCart()">
+        🛒 Giỏ hàng: <span id="count">0</span>
+    </div>
+</div>
+    <!-- Tiêu đề trang -->
+    <div class="title-product">
+        <h2>ỐP LƯNG ĐIỆN THOẠI</h2>
+    </div>
+    <!-- Khung chứa 8 sản phẩm -->
+    <section class="product-container">
+        <!-- Lặp lại khối này 8 lần cho 8 sản phẩm -->
+        <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+               
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Apple</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/op-iphone-15.webp" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Ốp lưng iPhone 15 Pro Max Silicone Case</h3>
+            <div class="product-price">
+                <span class="price-new">890.000đ</span>
+                <span class="price-old">990.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Ốp lưng iPhone 15', '890.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+
+        <!-- Coppy thêm 7 khối .card tương tự vào đây -->
+        <!-- Sản phẩm 2...8 -->
+    </section>
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

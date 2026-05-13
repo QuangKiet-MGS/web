@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Loa Bluetooth - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html">Tai nghe</a>
+            <a href="sac-du-phong.html">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html" class="active">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <div class="title-product">
+        <h2>LOA BLUETOOTH DI ĐỘNG</h2>
+    </div>
+
+    <section class="product-container">
+        <!-- Sản phẩm 1 -->
+        <div class="card">
+            <div class="badge badge-discount">Giảm 19%</div>
+            <div class="brand-name">JBL</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/loa1.webp" alt="JBL Flip 6">
+                </div>
+                <div class="product-specs">
+                    <div class="spec-item"><span class="icon">🔋</span><p>12 Giờ</p></div>
+                    <div class="spec-item"><span class="icon">💧</span><p>IP67</p></div>
+                </div>
+            </div>
+            <h3 class="product-title">Loa Bluetooth JBL Flip 6 Chính hãng</h3>
+            <div class="product-price">
+                <span class="price-new">2.390.000đ</span>
+                <span class="price-old">2.935.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 10.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Loa JBL Flip 6', '2.390.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+
+        <!-- Các card khác tương tự cho đủ 8 ô -->
+    </section>
+
+    <footer><p>© 2026 Shop Phụ Kiện Điện Thoại</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
