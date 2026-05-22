@@ -116,7 +116,7 @@ function processPayment(totalValue) {
     }
 }
 
-// Hàm cập nhật số lượng
+// Hàm cập nhật số lượn
 function updateCartCount() {
     let countElement = document.getElementById("count");
     if (countElement) {
