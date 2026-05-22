@@ -70,20 +70,49 @@ function showCart() {
     }
 }
 
-// Hàm xử lý thanh toán
+// Hàm xử lý thanh toán (Đã cập nhật tính năng xác nhận số tiền chuyển khoản)
 function processPayment(totalValue) {
     let address = prompt("📍 VUI LÒNG NHẬP ĐỊA CHỈ NHẬN HÀNG:");
     if (!address) return;
 
+    let formattedTotal = totalValue.toLocaleString('vi-VN') + "đ";
+
     let paymentMsg = "📍 Giao đến: " + address + "\n";
-    paymentMsg += "💰 Tổng tiền: " + totalValue.toLocaleString('vi-VN') + "đ\n\n";
-    paymentMsg += "CHỌN PTTT: 1. COD | 2. Chuyển khoản";
+    paymentMsg += "💰 Tổng tiền: " + formattedTotal + "\n\n";
+    paymentMsg += "CHỌN PHƯƠNG THỨC THANH TOÁN:\n1. Thanh toán khi nhận hàng (COD)\n2. Chuyển khoản ngân hàng";
 
     let payMethod = prompt(paymentMsg);
 
-    if (payMethod === "1" || payMethod === "2") {
-        alert("✅ Đặt hàng thành công! Đơn hàng sẽ sớm giao đến: " + address);
+    if (payMethod === "1") {
+        alert("✅ Đặt hàng thành công! Đơn hàng sẽ được thanh toán COD và giao đến: " + address);
         resetCart(); // Xóa sạch sau khi mua xong
+        
+    } else if (payMethod === "2") {
+        let bankingInfo = "🏦 THÔNG TIN CHUYỂN KHOẢN:\n\n";
+        bankingInfo += "▪ Ngân hàng: VIETCOMBANK (VCB)\n";
+        bankingInfo += "▪ Số tài khoản: DH52300964\n";
+        bankingInfo += "▪ Tên chủ tài khoản: THIEU QUANG KIET\n";
+        bankingInfo += "▪ Số tiền cần chuyển: " + formattedTotal + "\n";
+        bankingInfo += "▪ Nội dung chuyển khoản: Thanh toan don hang\n\n";
+        bankingInfo += "👉 VUI LÒNG NHẬP CHÍNH XÁC SỐ TIỀN CẦN CHUYỂN (" + totalValue + ") ĐỂ XÁC NHẬN:";
+
+        // Hiển thị prompt để người dùng nhập số tiền
+        let transferAmount = prompt(bankingInfo);
+
+        if (transferAmount === null) {
+            // Người dùng bấm Cancel bỏ qua
+            return; 
+        } else if (parseInt(transferAmount) === totalValue) {
+            // Nhập đúng số tiền
+            alert("✅ Đặt hàng thành công! Đơn hàng sẽ sớm giao đến: " + address);
+            resetCart();
+        } else {
+            // Nhập sai số tiền
+            alert("❌ Số tiền nhập không chính xác. Giao dịch đã bị hủy!");
+        }
+        
+    } else if (payMethod !== null) {
+        alert("❌ Lựa chọn không hợp lệ. Vui lòng thực hiện lại thanh toán!");
     }
 }
 
@@ -103,7 +132,7 @@ function resetCart() {
 }
 
 // --- SLIDER BANNER ---
-let bannerImages = ["images/banner1.jpg", "images/banner2.jpg", "images/banner3.jpg", "images/banner4.png"];
+let bannerImages = ["images/banner/banner1.jpg", "images/banner/banner2.jpg", "images/banner/banner3.jpg", "images/banner/banner4.png"];
 let bannerIndex = 0;
 
 function changeSlide() {
